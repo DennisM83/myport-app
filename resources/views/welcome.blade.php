@@ -17,6 +17,7 @@
             }
         </style>
     </head>
-
+    <body>
+        <h1>Hello, I'm {{auth()->user()->name}}</h1>
     </body>
 </html>
