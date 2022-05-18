@@ -12,7 +12,7 @@
             <span>Welcome {{auth()->user()->name}}</span>
             <ul style="list-style-type: none;">
                 <li>
-                    <a href="{{route('main')}}"></a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <form method="POST" action="{{ route('logout') }}">

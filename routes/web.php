@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'index']);
 
-Route::get('/admin', function () {
-    return view('admin.admin-main');
-})->middleware(['auth'])->name('admin');
+Route::controller(PageController::class)->group(function () {
+    Route::get('/admin', 'admin')->middleware(['auth']);
+});
 
 require __DIR__ . '/auth.php';
