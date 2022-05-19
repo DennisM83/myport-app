@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav class="flex">
         <div>
             <span>Welcome {{auth()->user()->name}}</span>
             <ul style="list-style-type: none;">
