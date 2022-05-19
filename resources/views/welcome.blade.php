@@ -20,5 +20,8 @@
     <body>
         <h1>Hello, I'm Dennis</h1>
         <h3>I'm a Web Developer. Let's work together!</h3>
+        <footer>
+            <a href="/login">login</a>
+        </footer>
     </body>
 </html>
